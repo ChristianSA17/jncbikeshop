@@ -13,6 +13,8 @@ git commit -m "enter message here" used to add commits to your local repo.
 
 git push - add all commits to online repository.
 
+git pull - pulls updates from the online repository to your local copy of repository
+
 add your username and email (encountered when you tried to commit but author identity is unkown)
 git config --local user.name <username>
 git config --local user.email <email>
