@@ -16,3 +16,6 @@ git push - add all commits to online repository.
 add your username and email (encountered when you tried to commit but author identity is unkown)
 git config --local user.name <username>
 git config --local user.email <email>
+
+links of tutorials used for creating the website:
+https://youtu.be/PwWHL3RyQgk
