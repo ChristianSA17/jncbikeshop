@@ -21,3 +21,5 @@ git config --local user.email <email>
 
 links of tutorials used for creating the website:
 https://youtu.be/PwWHL3RyQgk
+ 
+  hatdog
