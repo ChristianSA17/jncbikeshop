@@ -7,26 +7,37 @@
 
 body {
     transition: background 0.2s linear;
+    
 }
 
 body.dark {
-    background-color: #292C35;
+    background-color: #121212;
 }
 
-header.dark {
-    background-color: black;
+body.dark li a {
+    color: white;
 }
 
-li, a, button {
+body.dark p {
+    color: white;
+}
+
+body.dark .label {
+    background-color: #fff ;
+}
+body.dark .ball {
+    background-color: grey;
+}
+
+li, a {
+    color: black;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
-    color: black;
 }
 
 header {
-    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,22 +70,13 @@ header {
     color: #0088a9
 }
 
-button {
-    padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3 ease 0s;
-}
-
 button:hover {
     background-color: rgba(0,136,168,0.8);
 }
 
 .label {
     display: flex;
-    background-color: #111; 
+    background-color:#292c35; 
     align-items: center;  
     justify-content: space-between;
     position: relative;
@@ -94,7 +96,7 @@ button:hover {
 } 
 
 .ball {
-    background-color: #fff;
+    background-color: white;
     border-radius: 50%;
     position: absolute;
     top: 2px;
