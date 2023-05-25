@@ -67,23 +67,27 @@ header {
 }
 
 .navbuttons li a:hover {
-    color: #0088a9
+    color: #ff2c2c;
 }
 
 button:hover {
     background-color: rgba(0,136,168,0.8);
 }
 
+.side-buttons{
+    display:flex;
+}
+
 .label {
     display: flex;
     background-color:#292c35; 
-    align-items: center;  
     justify-content: space-between;
     position: relative;
     width: 50px;
     padding: 5px;
     height: 26px;
     border-radius:50px;
+    bottom: 5px;
 }
 
 .checkbox {
@@ -113,3 +117,12 @@ button:hover {
 .fa-sun {
     color: #f39c12;
 }
+
+.searchbar-cont{
+    padding-right: 20px;
+}
+
+.cart-container {
+    padding-right: 20px;
+}
+
