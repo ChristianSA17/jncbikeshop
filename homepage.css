@@ -29,8 +29,16 @@ body.dark .ball {
     background-color: #292c35;
 }
 
+body.dark .fa-shopping-cart {
+    color:white;
+}
+
+body.dark .fa-search {
+    color:white;
+}
+
 li, a {
-    color: black;
+    color: #292c35;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -124,5 +132,13 @@ button:hover {
 
 .cart-container {
     padding-right: 20px;
+}
+
+.fa-shopping-cart {
+    color:#292c35;
+}
+
+.fa-search {
+    color:#292c35;
 }
 
