@@ -6,36 +6,35 @@
         <title> JnC Bike Shop | Bike, Bike parts, and Bike Accessories Shop</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="homepage.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         
     </head>
 
     <body>
+
+        <div class="preloader">
+            <img src="loading-wheel.gif" alt="">
+        </div>
+
         <header>
            <img class="logo" src="JnC logo.png" alt="JnC Bikeshop">
             <nav> 
                 <ul class="navbuttons">
                     <li> <a href = "#" >HOME</a></li>
-                    <li> <a href = "#" >PRODUCTS</a></li>
+                    <li> <a href = "#" class="productbttn">PRODUCTS ⏷</a>
+                        <ul class="dropdown">
+                            <li> <a href = "#">MTB</a></li>
+                            <li> <a href = "#">RoadBike</a></li>
+                            <li> <a href = "#">Bike Parts</a></li>
+                            <li> <a href = "#">Bike Accessories</a></li>
+                        </ul>
+                    </li>
                     <li> <a href = "#" >ABOUT</a></li>
                     <li> <a href = "#" >CONTACT</a></li>
                 </ul>
             </nav>
 
             <div class="side-buttons">
-
-            <div class="searchbar-cont">
-                <div class="searchbar-icon">
-                    <i class ="search fa fa-search"></i>
-                </div>
-            
-            </div>
-
-            <div class="cart-container">
-                <div class="cart-icon">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                </div>
-            </div>
 
             <div>
                 <input type="checkbox"
@@ -46,7 +45,15 @@
                     <div class="ball"></div>
                 </label>
              </div>
+
+             <div class="menu-cont">
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
+
+            </div>
+
         </header>
         <script src="javascript.js"></script>
     </body>

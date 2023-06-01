@@ -22,19 +22,15 @@ body.dark p {
     color: white;
 }
 
+body.dark .menu-icon {
+    color:white;
+}
+
 body.dark .label {
     background-color: #fff ;
 }
 body.dark .ball {
     background-color: #292c35;
-}
-
-body.dark .fa-shopping-cart {
-    color:white;
-}
-
-body.dark .fa-search {
-    color:white;
 }
 
 li, a {
@@ -49,16 +45,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 5%;
+    padding: 20px 5%;
     position: fixed;
     top: 0;
     width: 100%;
 }
 
+.side-buttons{
+    display:flex;
+}
+
 .logo {
     cursor: pointer;
     height: 50px;
-    width: 110px;
+    width: 220px;
 }
 
 .navbuttons {
@@ -74,19 +74,38 @@ header {
     transition: all 0.3 ease 0s;
 }
 
+ul li ul.dropdown li {
+    display:block;
+}
+
+ul li ul.dropdown {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background-color:grey;
+}
+
+.dropdown li {
+    padding: 5px;
+    margin: 2px;
+}
+
+.dropdown li a {
+    color: white;
+    cursor: pointer;
+}
+
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
 .navbuttons li a:hover {
     color: #ff2c2c;
 }
 
-button:hover {
-    background-color: rgba(0,136,168,0.8);
-}
-
-.side-buttons{
-    display:flex;
-}
-
 .label {
+    cursor:pointer;
     display: flex;
     background-color:#292c35; 
     justify-content: space-between;
@@ -95,7 +114,6 @@ button:hover {
     padding: 5px;
     height: 26px;
     border-radius:50px;
-    bottom: 5px;
 }
 
 .checkbox {
@@ -126,19 +144,37 @@ button:hover {
     color: #f39c12;
 }
 
-.searchbar-cont{
-    padding-right: 20px;
+.menu-cont {
+    margin-left: 20px;
 }
 
-.cart-container {
-    padding-right: 20px;
-}
-
-.fa-shopping-cart {
+.menu-icon {
+    font-size:20px;
+    cursor:pointer;
+    margin-top: 2px;
     color:#292c35;
 }
 
-.fa-search {
-    color:#292c35;
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 1000;
+}
+
+.disappear {
+    animation: vanish 2s forwards;
+}
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
