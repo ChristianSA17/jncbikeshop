@@ -33,6 +33,10 @@ body.dark .ball {
     background-color: #292c35;
 }
 
+body.dark header {
+    background-color: #121212;
+}
+
 li, a {
     color: #292c35;
     font-family: "Montserrat", sans-serif;
@@ -46,9 +50,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    position: fixed;
     top: 0;
     width: 100%;
+    position:fixed;
+    background-color: white;
+    z-index: 999;
 }
 
 .side-buttons{
@@ -83,6 +89,11 @@ ul li ul.dropdown {
     z-index: 999;
     display: none;
     background-color:grey;
+}
+
+.dropdown > li > a {
+    font-family: 'Inter',sans-serif;
+    font-size: 13px;
 }
 
 .dropdown li {
@@ -169,7 +180,7 @@ ul li:hover ul.dropdown {
     display: flex;
     justify-content: center;
     align-items:center;
-    z-index: 100;
+    z-index: 9999;
 }
 
 .load-logo {
@@ -178,7 +189,7 @@ ul li:hover ul.dropdown {
 }
 
 .disappear {
-    animation: vanish 2s forwards;
+    animation: vanish 0.9s forwards;
 }
 @keyframes vanish {
     100% {
@@ -186,4 +197,83 @@ ul li:hover ul.dropdown {
         visibility: hidden;
     }
 }
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top:90px;
+}
+
+.slides {
+    display: none;
+}
+
+.prev-button, .next-button {
+    cursor:pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next-button {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-button:hover, .next-button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.slide-caption {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.slide-number {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
 
