@@ -238,7 +238,7 @@ ul li:hover ul.dropdown {
     font-size: 18px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: 20px;
     width: 100%;
     text-align: center;
 }
@@ -253,17 +253,26 @@ ul li:hover ul.dropdown {
 
 .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 1s;
+    padding: 5px;
+    margin-left: 5px ;
+
   }
+
+.nav-dots {
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    left: 270px;
+    
+}
   
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: #555555;
   }
 
   .fade {
