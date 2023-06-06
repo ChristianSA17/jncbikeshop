@@ -5,7 +5,7 @@
     <head>
         <title> JnC Bike Shop | Bike, Bike parts, and Bike Accessories Shop</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="homepage.css"> 
+        <link rel="stylesheet" href="style.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         
     </head>
@@ -20,17 +20,17 @@
            <img class="logo" src="jnc-logo.png" alt="JnC Bikeshop">
             <nav> 
                 <ul class="navbuttons">
-                    <li> <a href = "#" >HOME</a></li>
-                    <li> <a href = "#" class="productbttn">PRODUCTS ⏷</a>
+                    <li> <a href = "" >HOME</a></li>
+                    <li> <a href = "products.html" class="productbttn">PRODUCTS ⏷</a>
                         <ul class="dropdown">
-                            <li> <a href = "#">MTB</a></li>
-                            <li> <a href = "#">RoadBike</a></li>
-                            <li> <a href = "#">Bike Parts</a></li>
-                            <li> <a href = "#">Bike Accessories</a></li>
+                            <li> <a href = "products.html#mtb">MTB</a></li>
+                            <li> <a href = "products.html#rb">RoadBike</a></li>
+                            <li> <a href = "products.html#parts">Bike Parts</a></li>
+                            <li> <a href = "products.html#accessories">Bike Accessories</a></li>
                         </ul>
                     </li>
-                    <li> <a href = "#" >ABOUT</a></li>
-                    <li> <a href = "#" >CONTACT</a></li>
+                    <li> <a href = "#about" >ABOUT US</a></li>
+                    <li> <a href = "#contact" >CONTACT</a></li>
                 </ul>
             </nav>
 
@@ -87,14 +87,69 @@
         </div>
         <br>
 
-        <div class="nav-dots" style="text-align:center">
+        <div class="nav-dots">
             <label class="dot" onclick="currentSlide(1)"></label>
             <label class="dot" onclick="currentSlide(2)"></label>
             <label class="dot" onclick="currentSlide(3)"></label>
             <label class="dot" onclick="currentSlide(4)"></label>
         </div>
 
+        <div class="buttons-container">
+
+              <div class="mtb-container">
+                <img src="MTBBB.jpeg">
+                <p>MOUNTAIN BIKE</p>
+              </div>
+
+               <div class="rb-container">
+                <img src="roadb.jpeg">
+                <p>ROAD BIKE</p>
+               </div>
+                
+               <div class="parts-container">
+                <img src="partsss.jpg">
+                <p>PARTS</p>
+               </div>
+
+               <div class="Accessories-container">
+                <img src="Accs.png">
+                <p>ACCESSORIES</p>
+               </div>
+            
+
+            </div>
+
+            <p contenteditable="true" class="main-pg">"LIFE'S A JOURNEY, ENJOY<br>THE RIDE"</p>
+
+        <div class="aboutus-container" id="about">
+
+            <h1> ABOUT US </h1>
+
+            <div class="about-pg">
+
+            <h1>HELLO, WE HAVE A SHOP TO BUY SO MANY BIKES IN DIFFERENT BRANDS YOU LIKE. </h1>
+            <h1>WE HOPE YOU FIND YOUR BIKE OF CHOICE AND ITS DESIGNS. SO BUY YOU LIKE AND SPIN YOUR WHEELS ON THE ROAD!</h1>
+
+            </div>
+
+
+        </div>
+
+        <div class="contacts-container" id="contact">
+            
+            <h1> CONTACTS</h1>
+           <div class="about-pg">
+            <h1>NUMBER: 091212121212 </h1>
+            <h1>FACEBOOK: JNC BIKESHOP</h1>
+            <h1>INSTAGRAM: JNC_RIDE</h1>
+           </div>
+          
+            
+        </div>
+        
+
         <script src="javascript.js"></script>
+
     </body>
 
 </html>
