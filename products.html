@@ -12,10 +12,12 @@
 
 <body>
 
+    <!-- Loading Screen -->
     <div class="preloader">
         <img class="load-logo"src="loading-wheel.gif" alt="">
     </div>
 
+    <!-- Navigation Bar -->
     <header>
         <img class="logo" src="jnc-logo.png" alt="JnC Bikeshop">
          <nav> 
@@ -30,94 +32,106 @@
                      </ul>
                  </li>
                  <li> <a href = "homepage.html#about" >ABOUT US</a></li>
-                 <li> <a href = "homepage.html#contact" >CONTACT</a></li>
+                 <li> <a href = "homepage.html#contact" >CONTACTS</a></li>
              </ul>
          </nav>
 
          <div class="side-buttons">
 
-         <div>
-             <input type="checkbox"
-         class="checkbox" id="checkbox">
-             <label for="checkbox" class="label">
-                 <i class="fas fa-moon"> </i>
-                 <i class="fas fa-sun"></i>
-                 <div class="ball"></div>
-             </label>
-          </div>
+             <!-- Add to Cart Button -->
+             <div class="cart-cont">
+                <div class="cart-icons">
+                    <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                    <div class="cart">
+                        <h2 class="cart-title">Your Cart</h2>
+                        <div class="cart-content">
+                            
+                        
+                        </div>
+                        <!-- Total -->
+                        <div class="total">
+                            <div class="total-title">Total</div>
+                            <div class="total-price">₱0</div>
+                        </div>
+                        <!-- Buy Button -->
+                        <button type="button" class="btn-buy">Check Out</button>
+                        <!-- Cart Close -->
+                        <i class="fa-solid fa-x" id="close-cart"></i>
+                    </div>
+                </div>
+            </div>
 
-          <div class="menu-cont">
-             <div class="menu-icon">
-                 <i class="search fa fa-search"></i>
-             </div>
-         </div>
+            <!-- Search Button -->
+            <div class="search-cont">
+                <div class="search-icon">
+                    <i class="search fa fa-search"></i>
+                </div>
+            </div>
+
+            <!-- Dark Mode Button -->
+            <div>
+                <input type="checkbox"
+            class="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <i class="fas fa-moon"> </i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
 
          </div>
 
      </header>
 
-     <div class="product-section">
+     <!-- Item 1 -->
+     <section class="shop container">
+        <h2 class="section-title">PRODUCTS</h2>
 
-        <h1>PRODUCTS CATEGORY</h1>
+        <div class="shop-content">
+            <div class="product-box">
+                <img src="SPECIALIZED-EPICHT-PRODUCT.webp" alt="" class="product-img">
+                <h2 class="product-title">Specialized Epic Hardtail 29er - Gloss Flo Red/Metallic White Silver/Tarmac Black</h2>
+                <span class="price">₱134,695.00</span>
+                <i class='fas fa-cart-plus add-cart'></i>
+            </div>
 
-        <div class="product-category-section">
+            <!-- Item 2 -->
+            <div class="product-box">
+                <img src="SPECIALIZED-EPICHT-PRODUCT.webp" alt="" class="product-img">
+                <h2 class="product-title">Specialized Epic Hardtail 29er - Gloss Flo Red/Metallic White Silver/Tarmac Black</h2>
+                <span class="price">₱134,695.00</span>
+                <i class='fas fa-cart-plus add-cart'></i>
+            </div>
 
-        <div class="category-mtb">
-            <h3> <a  href ="#mtb" > MTB </a> </h3>
-        </div>
+            <!-- Item 3 -->
+            <div class="product-box">
+                <img src="SPECIALIZED-EPICHT-PRODUCT.webp" alt="" class="product-img">
+                <h2 class="product-title">Specialized Epic Hardtail 29er - Gloss Flo Red/Metallic White Silver/Tarmac Black</h2>
+                <span class="price">₱134,695.00</span>
+                <i class='fas fa-cart-plus add-cart'></i>
+            </div>
 
-        <div class="category-rb">
-            <h3> <a  href = "#rb" > Road Bike </a> </h3>
-        </div>
+            <!-- Item 4 -->
+            <div class="product-box">
+                <img src="S-WORKS-EPICHT-29er-PRODUCT.webp" alt="" class="product-img">
+                <h2 class="product-title">Sworks</h2>
+                <span class="price">₱334,695.00</span>
+                <i class='fas fa-cart-plus add-cart'></i>
+            </div>
 
-        <div class="category-parts">
-            <h3> <a  href = "#parts" > Bike Parts </a> </h3>
-        </div>
-
-        <div class="category-accessories">
-            <h3> <a href = "#accessories"> Bike Accessories  </a> </h3>
-
-        </div>
-
-        </div>
-     </div>
-
-     <div class="products"> 
-
-        <div class="mtb-products" id="mtb">
-
-            <h4>Mountain Bike</h4>
-            <img src="bike-parst.jpg">
-           
-        </div>
-
-        <div class="rb-products" id="rb">   
-            <h4> Road Bike</h4>
-            <img src="bike-parst.jpg">
-            
-        </div>
-
-        <div class="parts-products" id="parts">
-            <h4> Bike Parts</h4>
-            <img src="bike-parst.jpg">
-        </div>
-
-        <div class="accessories-products" id="accessories">
-            <h4>Bike Accessories</h4>
-            <img src="bike-parst.jpg">
-        </div>
+            <!-- Item 5 -->
+            <div class="product-box">
+                <img src="SPECIALIZED-EPICHT-PRODUCT.webp" alt="" class="product-img">
+                <h2 class="product-title">Specialized Epic Hardtail 29er - Gloss Flo Red/Metallic White Silver/Tarmac Black</h2>
+                <span class="price">₱134,695.00</span>
+                <i class='fas fa-cart-plus add-cart'></i>
+            </div>
         
+        </div>
+     </section>
 
-    </div>
-
-
-
-
-
-
-
-
-    <script src="javascript.js"></script>
+     <script src="javascript.js"></script>
+   
     
 </body>
 

@@ -30,32 +30,57 @@
                         </ul>
                     </li>
                     <li> <a href = "#about" >ABOUT US</a></li>
-                    <li> <a href = "#contact" >CONTACT</a></li>
+                    <li> <a href = "#contact" >CONTACTS</a></li>
                 </ul>
             </nav>
 
             <div class="side-buttons">
 
-            <div>
-                <input type="checkbox"
-            class="checkbox" id="checkbox">
-                <label for="checkbox" class="label">
-                    <i class="fas fa-moon"> </i>
-                    <i class="fas fa-sun"></i>
-                    <div class="ball"></div>
-                </label>
-             </div>
-
-             <div class="menu-cont">
-                <div class="menu-icon">
-                    <i class="search fa fa-search"></i>
+                <!-- Add to Cart Button -->
+                <div class="cart-cont">
+                    <div class="cart-icons">
+                        <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                        <div class="cart">
+                            <h2 class="cart-title">Your Cart</h2>
+                            <div class="cart-content">
+                            
+                            </div>
+                            <!-- Total -->
+                            <div class="total">
+                                <div class="total-title">Total</div>
+                                <div class="total-price">₱0</div>
+                            </div>
+                            <!-- Buy Button -->
+                            <button type="button" class="btn-buy">Check Out</button>
+                            <!-- Cart Close -->
+                            <i class="fa-solid fa-x" id="close-cart"></i>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+                <!-- Search Button -->
+                <div class="search-cont">
+                    <div class="search-icon">
+                        <i class="search fa fa-search"></i>
+                    </div>
+                </div>
+
+                <!-- Dark Mode Button -->
+                <div>
+                    <input type="checkbox"
+                class="checkbox" id="checkbox">
+                    <label for="checkbox" class="label">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
 
             </div>
 
         </header>
 
+        <!-- Carousel -->
         <div class="slideshow-container">
 
             <div class="slides fade">
@@ -117,38 +142,82 @@
                </div>
             
 
-            </div>
-
-            <p contenteditable="true" class="main-pg">"LIFE'S A JOURNEY, ENJOY<br>THE RIDE"</p>
-
-        <div class="aboutus-container" id="about">
-
-            <h1> ABOUT US </h1>
-
-            <div class="about-pg">
-
-            <h1>HELLO, WE HAVE A SHOP TO BUY SO MANY BIKES IN DIFFERENT BRANDS YOU LIKE. </h1>
-            <h1>WE HOPE YOU FIND YOUR BIKE OF CHOICE AND ITS DESIGNS. SO BUY YOU LIKE AND SPIN YOUR WHEELS ON THE ROAD!</h1>
-
-            </div>
-
-
         </div>
 
-        <div class="contacts-container" id="contact">
-            
-            <h1> CONTACTS</h1>
-           <div class="about-pg">
-            <h1>NUMBER: 091212121212 </h1>
-            <h1>FACEBOOK: JNC BIKESHOP</h1>
-            <h1>INSTAGRAM: JNC_RIDE</h1>
-           </div>
-          
-            
-        </div>
+        <p class="main-pg">"LIFE'S A JOURNEY, ENJOY<br>THE RIDE"</p>
+
+        <footer> 
+            <div class="row">
+                <div class="col">
+                    <img src="jnc-logo.png" alt="" class="foot-logo">
+                    <p>Welcome to JnC Bikeshop, your premier destination for high-quality bikes and cycling gear from renowned brands. We offer a diverse range of mountain bikes and road bikes from trusted names such as Trek, Specialized, Giant, Cannondale, Pinarello, and BMC. Our collection ensures we cater to the needs and preferences of every rider. Additionally, we stock top-of-the-line bike parts and accessories from brands like Shimano and SRAM to enhance your cycling experience. With exceptional customer service and a knowledgeable team, JnC Bikeshop is here to assist you in finding the perfect bike and gear. Fuel your passion for cycling and shop with us today.</p>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </footer>
+
+
+
+
+
         
 
         <script src="javascript.js"></script>
+
+        <script>
+            // Carousel
+            let slideIndex = 1;
+            let slideTimer;
+            
+            showSlides(slideIndex);
+            startSlideTimer();
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+                resetSlideTimer();
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+                resetSlideTimer();
+            }
+            
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("slides");
+                let dots = document.getElementsByClassName("dot");
+                
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+            
+            function startSlideTimer() {
+                slideTimer = setInterval(function() {
+                    showSlides(slideIndex += 1);
+                }, 5000);
+            }
+            
+            function resetSlideTimer() {
+                clearInterval(slideTimer);
+                startSlideTimer();
+            }</script>
 
     </body>
 
