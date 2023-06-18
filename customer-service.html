@@ -1,0 +1,209 @@
+<html>
+
+    <head>
+        <title> JnC Bike Shop | Bike, Bike parts, and Bike Accessories Shop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+    </head>
+
+    <body>
+
+        <div class="preloader">
+            <img class="load-logo"src="loading-wheel.gif" alt="">
+        </div>
+
+        <header>
+            <img class="logo" src="jnc-logo.png" alt="JnC Bikeshop">
+             <nav> 
+                 <ul class="navbuttons">
+                     <li> <a href = "homepage.html" >HOME</a></li>
+                     <li> <a href = "products.html" class="productbttn">PRODUCTS ⏷</a>
+                         <ul class="dropdown">
+                             <li> <a href = "#mtb">MTB</a></li>
+                             <li> <a href = "#rb">RoadBike</a></li>
+                             <li> <a href = "#parts">Bike Parts</a></li>
+                             <li> <a href = "#accessories">Bike Accessories</a></li>
+                         </ul>
+                     </li>
+                     <li> <a href = "aboutus.html" >ABOUT US</a></li>
+                     <li> <a href = "customer-service.html" >CONTACTS</a></li>
+                 </ul>
+             </nav>
+    
+             <div class="side-buttons">
+    
+                 <!-- Add to Cart Button -->
+                 <div class="cart-cont">
+                    <div class="cart-icons">
+                        <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                        <div class="cart">
+                            <h2 class="cart-title">Your Cart</h2>
+                            <div class="cart-content">
+                                
+                            
+                            </div>
+                            <!-- Total -->
+                            <div class="total">
+                                <div class="total-title">Total</div>
+                                <div class="total-price">₱0</div>
+                            </div>
+                            <!-- Buy Button -->
+                            <button type="button" class="btn-buy">Check Out</button>
+                            <!-- Cart Close -->
+                            <i class="fa-solid fa-x" id="close-cart"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Search Button -->
+                <div class="search-cont">
+                    <div class="search-icon">
+                        <i class="search fa fa-search"></i>
+                    </div>
+                </div>
+    
+                <!-- Dark Mode Button -->
+                <div>
+                    <input type="checkbox"
+                class="checkbox" id="checkbox">
+                    <label for="checkbox" class="label">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+    
+             </div>
+    
+         </header>
+        
+        <div class="contactspg">
+      
+            <div class="contactus-container">
+                <img class="first-wp-conatctus" src="contact us.png">
+            </div>
+
+            <div class="feel-free-to-contact-us">
+                <h3>FEEL FREE TO CONTACT US</h3>
+                <p>We adhere to the principle of reciprocity and mutual<br> benefit. We enjoy a good reputation among our <br> customers because we provide professional<br> service, high quality products as well as competitive<br> price.</p>
+            </div>
+
+            <div class="icon-section">
+                <div class="contactus-icon">
+                    <i class="fa-solid fa-headset"></i><br>
+                    <span class="icon-label">CONTACT : JD and Christian</span>
+                </div>
+
+                <div class="contactus-icon">
+                    <i class="fa-solid fa-phone-volume"></i><br>
+                    <span class="icon-label">PHONE : 09447557385</span>
+                </div>
+            </div>
+
+            <div class="icon-section-second">
+                <div class="contactus-icon">
+                    <i class="fa-solid fa-envelope-open-text"></i><br>
+                    <span class="icon-label">EMAIL : JnCbikeshop@gmail.com</span>
+                </div>
+                <div class="contactus-icon">
+                    <i class="fa-solid fa-map-location-dot"></i><br>
+                    <span class="icon-label">ADDRESS : Silang, Cavite</span>
+                </div>
+            </div>
+
+            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.2004937320394!2d120.97601729093421!3d14.241523489482427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7e7d0744eafd%3A0xf25bff0f1b1deb7b!2sCavite%20State%20University%2C%20Silang%20Campus!5e0!3m2!1sen!2sph!4v1686712732436!5m2!1sen!2sph"  width="900" height="950" style="border: 30;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </center>
+                    
+            
+        
+            <div class="get-in-touch-with-us">
+                <h3>GET IN TOUCH WITH US</h3>
+                <p>If you have any new ideas and suggestions on <br>our products, please feel free to contact us, <br> looking forward to cooperating with you, and <br>presenting satisfactory products for you.</p>
+            </div>
+        
+            <div class="CS-survey-container">
+            
+                <form id="form" action="actionpg.php" method="GET">
+                <div id="error"></div>
+                <label for="name" class="font-for-cs">Name</label>
+                <input type="text" id="fname" name="name" placeholder="Your name.." required>
+            
+                <label for="email"  class="font-for-cs">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email.." required>
+            
+                <label for="country"  class="font-for-cs">Country</label>
+                <select id="country" name="country" required>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="philippines">Philippines</option>
+                    <option value="united kingdom">United Kingdom</option>
+                    <option value="united states">United States</option>
+                    <option value="japan">Japan</option>
+                    <option value="germany">Germany</option>
+                    <option value="italy">Italy</option>
+                    <option value="china">China</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                
+                    <button type="submit" Class="submit-btn">Submit</button>   
+
+                </form>
+            
+            </div> 
+
+        </div>
+
+
+        <script src="javascript.js">
+
+            
+        </script>
+
+<footer> 
+    <div class="row">
+        <div class="col">
+            <img src="jnc-logo.png" alt="" class="foot-logo">
+            <p>JnC Bikeshope is a premier bike shop specializing in the sale of bicycles from various well-known brands, as well as a wide range of bike parts and accessories. Located in Silang, Cavite, our shop caters to biking enthusiasts of all levels, from beginners to seasoned riders.</p>
+        </div>
+        
+        <div class="col">
+            <h3>SHOP</h3>
+            <p>Sabutan Road</p>
+            <p>101 Iba Silang, Cavite,</p>
+            <p>Philippines</p>
+            <p class="email-id">JnCbikeshop@gmail.com</p>
+            <h4>+63 - 9447557385</h4> 
+            </div>
+
+            <div class="col">
+                <h3>PRODUCTS</h3>
+                <ul>
+                    <li><a href="">Mountain Bikes</a></li>
+                    <li><a href="">Road Bikes</a></li>
+                    <li><a href="">Bike Parts</a></li>
+                    <li><a href="">Bike Accessories</a></li>
+                </ul>
+            </div>
+
+        <div class="col">
+            <h3>About</h3>
+            <ul>
+                <li><a href="" class="abtfoot">About Us</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <hr>
+    <p class="copyright"> JnC Bikeshope © 2023 - All Rights Reserved</p>
+</footer>
+
+    </body>
+</html>

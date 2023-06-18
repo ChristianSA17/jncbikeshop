@@ -74,6 +74,8 @@ function ready() {
     var input = quantityInputs[i];
     input.addEventListener("change", quantityChanged);
   }
+
+
   // Add To Cart
   var addCart = document.getElementsByClassName("add-cart");
   for (var i = 0; i < addCart.length; i++) {
@@ -187,7 +189,7 @@ function updateCartUI() {
       <div class="detail-box">
         <div class="cart-product-title">${item.title}</div>
         <div class="cart-price">${item.price}</div>
-        <input type="number" value="${item.quantity}" class="cart-quantity">
+        <input type="number" min="1" value="${item.quantity}" class="cart-quantity">
       </div>
       <!-- Remove Cart -->
       <i class="fa-solid fa-trash cart-remove"></i>
@@ -227,3 +229,25 @@ function updatetotal() {
 
   document.getElementsByClassName("total-price")[0].innerText = "₱" + total;
 }
+
+form.addEventListener('submit', (e) => {
+  let messages = [] 
+  if(fname.value === '' || fname.value == null ) {
+   messages.push('Name is required')
+   
+  }
+  if(email.value === '' || email.value == null ) {
+      messages.push('Email is required')
+      
+     }
+
+  if (messages.length > 0) {
+      e.preventDefault()
+  }
+if (messages.length > 0) {
+  e.preventDefault()
+  errorElement.innerText = messages.join(' ')
+}
+
+
+})
