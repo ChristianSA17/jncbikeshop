@@ -589,13 +589,14 @@ body.dark .shop {
 
 footer {
   width: 100%;
-  position: absolute;
-  bottom: -100;
+  position: relative;
+  bottom: 0;
   background: #121212;
   color: #fff;
   padding: 100px 0 30px;
   font-size: 13px;
   line-height: 20px;
+  
 }
 
 .row {
@@ -663,11 +664,18 @@ hr {
  }
 
  .sidebar {
-  width: 100%;
+  width: 25%;
   height: 100%;
   padding: 50px 0;
   background-color: #ddd;
+  position: fixed;
+  max-height: 100%; /* Adjust the height as needed */
+  overflow-y: auto;
  }
+
+ 
+
+
 
  body.dark .sidebar {
   background-color:#292c35;
@@ -713,6 +721,7 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  
  }
 
  .fil-p {
@@ -736,6 +745,11 @@ hr {
  }
 
  .fil-p:hover {
+  color: #e23e3e;
+  background-color: #aaa;
+ }
+
+  .collapsible:hover {
   color: #e23e3e;
   background-color: #aaa;
  }
@@ -1158,7 +1172,9 @@ font-size: 40px;
 line-height: 1.5;
 }
 .contactus-icon {
-text-align: center;
+padding-top: 20%;
+padding-bottom: 20%;
+
 }
 
 .contactus-icon i {
@@ -1171,11 +1187,15 @@ font-size: 30px; /* Adjust the size of the label as needed */
 
 }
 .icon-section{
-display: flex;
+text-align:center;
 align-items: center;
-gap: 540px;
-padding-bottom: 200px;
-padding-top: 200px;
+}
+
+.icon-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
 }
 
 body.dark .icon-section {
@@ -1183,10 +1203,8 @@ body.dark .icon-section {
 }
 
 .icon-section-second{
-display: flex;
-gap: 550px;
-padding-bottom: 200px;
-padding-top: 10px;
+text-align: center;
+align-items:center;
 }
 
 body.dark .icon-section-second {
@@ -1229,6 +1247,9 @@ font-family: 'Poppins', sans-serif;
 }
 .aboutus-collab-pictures{
 display: flex;
+gap:200px;
+justify-content: center;
+margin: 5%;
 }
 
 
@@ -1288,15 +1309,6 @@ font-size: 18px;
 border-radius: 4px;
 cursor: pointer;
 box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-}
-.aboutus-collab-pictures{
-display: flex;
-gap: 200px;
-
-
-margin-left: 550px;
-padding-bottom: 20px;
-padding-top: 100px;
 }
 .pic-one {
 overflow: hidden; /* Hides the overflow when zoomed in */

@@ -220,34 +220,19 @@ function updatetotal() {
     var cartBox = cartBoxes[i];
     var priceElement = cartBox.getElementsByClassName("cart-price")[0];
     var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
-    var price = parseFloat(priceElement.innerText.replace("₱", ""));
+    var price = parseFloat(priceElement.innerText.replace(/[^0-9.-]+/g, ""));
     var quantity = quantityElement.value;
     total = total + price * quantity;
   }
-  // If price Contain some Cents Value
+  // If price contains some cents value
   total = Math.round(total * 100) / 100;
 
-  document.getElementsByClassName("total-price")[0].innerText = "₱" + total;
-}
+  var formattedTotal = total.toLocaleString(undefined, {
+    style: "currency",
+    currency: "PHP"
+  });
 
-form.addEventListener('submit', (e) => {
-  let messages = [] 
-  if(fname.value === '' || fname.value == null ) {
-   messages.push('Name is required')
-   
-  }
-  if(email.value === '' || email.value == null ) {
-      messages.push('Email is required')
-      
-     }
-
-  if (messages.length > 0) {
-      e.preventDefault()
-  }
-if (messages.length > 0) {
-  e.preventDefault()
-  errorElement.innerText = messages.join(' ')
+  document.getElementsByClassName("total-price")[0].innerText = formattedTotal;
 }
 
 
-})
