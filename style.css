@@ -671,6 +671,8 @@ hr {
   position: fixed;
   max-height: 100%; /* Adjust the height as needed */
   overflow-y: auto;
+  left:0;
+  top:90px;
  }
 
  
@@ -836,6 +838,20 @@ background-size: cover;
 width: 100%;
 margin-top: -490px;
 }
+
+.productpg-image {
+  background-attachment: relative ;
+  width:100%;
+  margin-left:25%;
+  position:relative;
+  
+}
+
+.product-imgpg {
+  object-fit:cover;
+  height:250px;
+}
+
 .first-wp-conatctus {
 background-repeat: no-repeat;
 background-attachment: fixed ;
