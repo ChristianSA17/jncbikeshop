@@ -620,9 +620,9 @@ body.dark .shop {
 .add-cart {
   cursor: pointer;
   display: inline-block;
-  background-color: #fff;
+  background-color: #e23e3e;
   text-decoration: none;
-  color:#e23e3e;
+  color:#fff;
   padding: 8px 20px;
   border-radius: 5px;
   border: 2px solid #e23e3e;
@@ -632,9 +632,9 @@ body.dark .shop {
 
 .add-cart:hover {
   border-color:#e23e3e;
-  background-color: #e23e3e;
+  background-color: #fff;
+  color:#e23e3e;
 
-  color:#fff;
 }
 
 footer {
