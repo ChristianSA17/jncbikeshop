@@ -23,10 +23,10 @@
                     <li> <a href = "" >HOME</a></li>
                     <li> <a href = "products.html" class="productbttn">PRODUCTS ⏷</a>
                         <ul class="dropdown">
-                            <li> <a href = "products.html#mtb">MTB</a></li>
-                            <li> <a href = "products.html#rb">RoadBike</a></li>
-                            <li> <a href = "products.html#parts">Bike Parts</a></li>
-                            <li> <a href = "products.html#accessories">Bike Accessories</a></li>
+                            <li> <a href = "products-mountainbikes.html">MTB</a></li>
+                            <li> <a href = "products-roadbikes.html">RoadBike</a></li>
+                            <li> <a href = "products-bikeparts.html">Bike Parts</a></li>
+                            <li> <a href = "products-bikeaccessories.html">Bike Accessories</a></li>
                         </ul>
                     </li>
                     <li> <a href = "aboutus.html" >ABOUT US</a></li>
@@ -55,13 +55,6 @@
                             <!-- Cart Close -->
                             <i class="fa-solid fa-x" id="close-cart"></i>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Search Button -->
-                <div class="search-cont">
-                    <div class="search-icon">
-                        <i class="search fa fa-search"></i>
                     </div>
                 </div>
 
@@ -121,30 +114,113 @@
 
         <div class="buttons-container">
 
-              <div class="mtb-container">
-                <img src="MTBBB.jpeg">
+              <a href="products-mountainbikes.html"><div class="mtb-container">
+                <img style="object-fit:scale-down;" src="MTBBB.jpeg">
                 <p>MOUNTAIN BIKE</p>
-              </div>
+              </div> </a>
 
-               <div class="rb-container">
-                <img src="roadb.jpeg">
+               <a href="products-roadbikes.html"><div class="rb-container">
+                <img style="object-fit:scale-down;" src="roadb.jpeg">
                 <p>ROAD BIKE</p>
-               </div>
+               </div></a>
                 
-               <div class="parts-container">
-                <img src="partsss.jpg">
+               <a href="products-bikeparts.html"><div class="parts-container">
+                <img style="object-fit:scale-down;" src="partsss.jpg">
                 <p>PARTS</p>
-               </div>
+               </div></a>
 
-               <div class="Accessories-container">
-                <img src="Accs.png">
+               <a href="products-bikeaccessories.html"><div class="Accessories-container">
+                <img style="object-fit:scale-down;" src="Accs.png">
                 <p>ACCESSORIES</p>
-               </div>
+               </div></a>
             
 
         </div>
 
         <p class="main-pg">"LIFE'S A JOURNEY, ENJOY<br>THE RIDE"</p>
+
+        <div class="welcome-homepage">
+            <div class="welcome-content">
+
+                <div class="welcome-main-content">
+                    <h2>WE LOOK FORWARD TO YOUR JOINING</h2>
+                    <h1>WELCOME TO JOIN US</h1>
+                    <h3>
+
+                        What is JnC? We are a bicycle brand company that integrates R&D, production, manufacturing and sales. SUNPEED bicycle is currently being distributed in countries such as the Philippines, United Kingdom, Canada and Japan. Now we are looking for agents and franchisees all over the world, we welcome people who are interested to become JnC's partners with us.  </h3>
+                    
+                </div>
+            </div>
+            
+            
+            <div class="homepage-welcome-img">
+                <img src="Ridefor2.jpg" alt="Portrait" width="350">
+            </div>
+        </div>
+        <div class="another-welcome">
+            <div class="another-welcome-content">
+
+                <div class="another-welcome-main-content">
+                    <h2>JnC BRAND</h2>
+                    <h1>BIKE FITTING</h1>
+                    <h3>We understand the importance of a properly fitted bike for comfort and performance. Our shop offers professional bike fitting services, where our experts assess body measurements, flexibility, and riding style to ensure an optimal riding position.  </h3>
+                    
+                </div>
+                <div class="another-welcome-img">
+                   <img src="Shesh.jpg" alt="Portrait" width="350">
+                </div>
+            </div>
+        
+
+         <div class="pic-center">
+            <img src="jnc-logo.png">
+            <p>IF YOU CONSULT OUR PRODUCTS, YOU WILL GET UNEXPECTED DISCOUNTS, PLEASE CONTACT US IMMEDIATELY.</p>
+            <a href="customer-service.html"><button class="go-contacts">GO CONTACTS</button></a>
+         </div>
+         
+
+      
+
+        <div class="get-in-touch-with-us">
+            <h3>GET IN TOUCH WITH US</h3>
+            <p>If you have any new ideas and suggestions on <br>our products, please feel free to contact us, <br> looking forward to cooperating with you, and <br>presenting satisfactory products for you.</p>
+        </div>
+    
+        <div class="CS-survey-container">
+        
+            <form id="form" action="actionpg.php" method="GET">
+            <div id="error"></div>
+            <label for="name" class="font-for-cs">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name.." required>
+        
+            <label for="email"  class="font-for-cs">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email.." required>
+        
+            <label for="country"  class="font-for-cs">Country</label>
+            <select id="country" name="country" required>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="philippines">Philippines</option>
+                <option value="united kingdom">United Kingdom</option>
+                <option value="united states">United States</option>
+                <option value="japan">Japan</option>
+                <option value="germany">Germany</option>
+                <option value="italy">Italy</option>
+                <option value="china">China</option>
+            </select>
+        
+            <label for="subject" class="font-for-cs">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            
+                <button type="submit" Class="submit-btn">Submit</button>   
+
+            </form>
+        
+        </div> 
+
+    </div>
 
         <footer> 
             <div class="row">
@@ -165,17 +241,17 @@
                     <div class="col">
                         <h3>PRODUCTS</h3>
                         <ul>
-                            <li><a href="">Mountain Bikes</a></li>
-                            <li><a href="">Road Bikes</a></li>
-                            <li><a href="">Bike Parts</a></li>
-                            <li><a href="">Bike Accessories</a></li>
+                            <li><a href="products-mountainbikes.html">Mountain Bikes</a></li>
+                            <li><a href="products-roadbikes.html">Road Bikes</a></li>
+                            <li><a href="products-bikeparts.html">Bike Parts</a></li>
+                            <li><a href="products-bikeaccessories.html">Bike Accessories</a></li>
                         </ul>
                     </div>
 
                 <div class="col">
                     <h3>About</h3>
                     <ul>
-                        <li><a href="" class="abtfoot">About Us</a></li>
+                        <li><a href="aboutus.html" class="abtfoot">About Us</a></li>
                     </ul>
 
                 </div>
@@ -187,6 +263,42 @@
         </footer>
 
         <script src="javascript.js"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+   var submitBtn = document.querySelector(".submit-btn");
+   submitBtn.addEventListener("click", function(e) {
+     e.preventDefault(); // Prevents the default form submission
+     
+     let messages = [];
+     
+     var fname = document.querySelector("#fname");
+     var email = document.querySelector("#email");
+     var errorElement = document.querySelector("#error");
+     
+     errorElement.innerHTML = ""; // Clear previous error messages
+     
+     if (fname.value === '' || fname.value == null) {
+       messages.push('*Name is required*');
+     }
+     
+     if (email.value === '' || email.value == null) {
+       messages.push('*Email is required*');
+     }
+     
+     if (messages.length > 0) {
+       errorElement.innerHTML = messages.join('<br>');
+       return; // Stop further execution
+     }
+     
+     // Additional form processing code
+     location.replace("survey-response.html");
+   });
+ });
+ 
+ 
+             </script>
+    
 
         <script>
             // Carousel

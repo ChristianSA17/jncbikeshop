@@ -96,14 +96,14 @@ function buyButtonClicked() {
     return;
   }
 
-  alert("Your Order is placed");
+  window.open('checkout-page.html');
 
   while (cartContent.hasChildNodes()) {
     cartContent.removeChild(cartContent.firstChild);
   }
 
-  cartItems = [];
-  updateCartUI();
+  
+  
 }
 
 // Remove Items From Cart
@@ -177,6 +177,7 @@ function addCartClicked(event) {
 }
 
 function updateCartUI() {
+  
   var cartContent = document.getElementsByClassName("cart-content")[0];
   cartContent.innerHTML = "";
 

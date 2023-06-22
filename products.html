@@ -25,10 +25,10 @@
                  <li> <a href = "homepage.html" >HOME</a></li>
                  <li> <a href = "products.html" class="productbttn">PRODUCTS ⏷</a>
                      <ul class="dropdown">
-                         <li> <a href = "#mtb">MTB</a></li>
-                         <li> <a href = "#rb">RoadBike</a></li>
-                         <li> <a href = "#parts">Bike Parts</a></li>
-                         <li> <a href = "#accessories">Bike Accessories</a></li>
+                         <li> <a href = "products-mountainbikes.html">MTB</a></li>
+                         <li> <a href = "products-roadbikes.html">RoadBike</a></li>
+                         <li> <a href = "products-bikeparts.html">Bike Parts</a></li>
+                         <li> <a href = "products-bikeaccessories.html">Bike Accessories</a></li>
                      </ul>
                  </li>
                  <li> <a href = "aboutus.html" >ABOUT US</a></li>
@@ -58,13 +58,6 @@
                         <!-- Cart Close -->
                         <i class="fa-solid fa-x" id="close-cart"></i>
                     </div>
-                </div>
-            </div>
-
-            <!-- Search Button -->
-            <div class="search-cont">
-                <div class="search-icon">
-                    <i class="search fa fa-search"></i>
                 </div>
             </div>
 
@@ -102,32 +95,33 @@
 
                         <div class="btns">
 
-                            <button style="text-align: center;"class="fil-p"> <a> All Products </a> </button>
+                            <button style="text-align: center;"class="fil-p"> <a href="products.html"> All Products </a> </button>
 
-                            <button class="collapsible"> <a>Mountain Bikes </a></button>
+                            <button class="collapsible"> <a href="products-mountainbikes.html">Mountain Bikes </a></button>
                             <div class="content">
-                                <button class="fil-p">- Hardtail</button>
-                                <button class="fil-p">- Full Suspension</button>
+                                <a href="products-mountainbikes-hardtail.html"><button class="fil-p">- Hardtail</button></a>
+                                    <a href="products-mountainbikes-fullsus.html"><button class="fil-p">- Full Suspension</button></a>
                             </div>
 
-                            <button class="fil-p"><a>Road Bikes </a></button>
+                            <button class="fil-p"><a href="products-roadbikes.html">Road Bikes </a></button>
 
-                            <button class="collapsible"><a href="">Bike Parts </a></button>
+                            <button class="collapsible"><a href="products-bikeparts.html">Bike Parts </a></button>
                             <div class="content">
-                                <button class="fil-p">- Groupset</button>
-                                <button class="fil-p">- Wheelset </button>
-                                <button class="fil-p">- Suspension Forks </button>
-                                <button class="fil-p">- Pedals</button>
-                                <button class="fil-p">- Other Parts </button>
+                               <a href="products-bikeparts-groupset.html"> <button class="fil-p">- Groupset</button> </a>
+                               <a href="products-bikeparts-wheelset.html">  <button class="fil-p">- Wheelset </button> </a>
+                               <a href="products-bikeparts-forks.html"> <button class="fil-p">- Suspension Forks </button> </a>
+                               <a href="products-bikeparts-pedals.html"> <button class="fil-p">- Pedals</button> </a>
+                               <a href="products-bikeparts-otherparts.html"> <button class="fil-p">- Other Parts </button> </a> 
                             </div>
 
-                            <button style="margin-bottom: 20px;" class="collapsible"> <a>Bike Accessories </a></button>
+                            <button style="margin-bottom: 20px;" class="collapsible"> <a href="products-bikeaccessories.html">Bike Accessories </a></button>
                             <div class="content">
-                                <button class="fil-p">- Helmets </button>
-                                <button class="fil-p">- Handle Grips & Grip Tapes </button>
-                                <button class="fil-p">- Head Lights & Tail Lights </button>
-                                <button class="fil-p">- Bags </button>
-                                <button style="margin-bottom: 50px;" class="fil-p">- Water Bottle </button>
+                               <a href="products-bikeaccessories-cyclocomputer.html"> <button class="fil-p">- Cyclocomputers </button> </a>
+                               <a href="products-bikeaccessories-helmet.html"> <button class="fil-p">- Helmets </button> </a>
+                               <a href="products-bikeaccessories-grips&tapes.html"> <button class="fil-p">- Handle Grips & Grip Tapes </button> </a>
+                               <a href="products-bikeaccessories-lights.html"> <button class="fil-p">- Head Lights & Tail Lights </button> </a>
+                               <a href="products-bikeaccessories-bags.html"> <button class="fil-p">- Bags </button> </a>
+                               <a href=""> <button style="margin-bottom: 50px;" class="fil-p">- Water Bottle </button> </a>
                             </div>
                         
                         </div>
@@ -136,7 +130,7 @@
             </div>
             <div class="contant">
                 <div class="heading">
-                    <p>Featured Products </p>
+                    <p> All Products </p>
                 </div>
                 <div id="root"></div>
             </div>
@@ -154,7 +148,7 @@
             <div class="shop-content">
                  <!-- Item 1 -->
                  <div class="item-filter">
-                    <div class="product-box">
+                     <div class="product-box">
                         <div class="product-img-cont">
                             <img src="S-WORKS-EPICHT-PRODUCT.webp" alt="" class="product-img">  
                         </div>
@@ -163,6 +157,9 @@
                         <a class="add-cart">ADD TO CART</a>
                     </div>
                 </div>
+
+               
+                
 
                 <!-- Item 2 -->
                 <div class="item-filter">
@@ -1069,11 +1066,13 @@
                 </div>
             </div>
             
-           
+            </div>
+
 
             <h2 style="margin: 40px 0 40px;">WHEELSET</h2>
             
-
+            <div class="shop-content">
+            
              <!-- Item 1 -->
              <div class="item-filter">
                 <div class="product-box">
@@ -1770,17 +1769,17 @@
                 <div class="col">
                     <h3>PRODUCTS</h3>
                     <ul>
-                        <li><a href="">Mountain Bikes</a></li>
-                        <li><a href="">Road Bikes</a></li>
-                        <li><a href="">Bike Parts</a></li>
-                        <li><a href="">Bike Accessories</a></li>
+                        <li><a href="products-mountainbikes.html">Mountain Bikes</a></li>
+                        <li><a href="products-roadbikes.html">Road Bikes</a></li>
+                        <li><a href="products-bikeparts.html">Bike Parts</a></li>
+                        <li><a href="products-bikeaccessories.html">Bike Accessories</a></li>
                     </ul>
                 </div>
 
             <div class="col">
                 <h3>About</h3>
                 <ul>
-                    <li><a href="" class="abtfoot">About Us</a></li>
+                    <li><a href="aboutus.html" class="abtfoot">About Us</a></li>
                 </ul>
 
             </div>
@@ -1809,7 +1808,7 @@
           });
         }
         </script>
-        
+
    
     
 </body>

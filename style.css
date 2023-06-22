@@ -583,15 +583,15 @@ body.dark .shop {
 }
 
 .product-img-cont .discount {
-  position:absolute;
-  right: 0;
-  top: 20px;
-  background-color:red;
-  color:#fff;
-  z-index:1;
-  border-radius: 2px;
-  font-size: 12px;
-  padding: 4px 16px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #ff5252;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .product-img-cont img{
@@ -620,9 +620,9 @@ body.dark .shop {
 .add-cart {
   cursor: pointer;
   display: inline-block;
-  background-color: #e23e3e;
+  background-color: #fff;
   text-decoration: none;
-  color:#fff;
+  color: #e23e3e;
   padding: 8px 20px;
   border-radius: 5px;
   border: 2px solid #e23e3e;
@@ -632,8 +632,8 @@ body.dark .shop {
 
 .add-cart:hover {
   border-color:#e23e3e;
-  background-color: #fff;
-  color:#e23e3e;
+  background-color: #e23e3e;
+  color:#fff;
 
 }
 
@@ -937,10 +937,10 @@ resize: vertical /* Allow the user to vertically resize the textarea (not horizo
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-background-color: #45a049;
+background-color: red;
 }
 .submit-btn{
-background-color: #04AA6D;
+background-color: #e23e3e;
 color: white;
 padding: 12px 20px;
 border: none;
@@ -997,18 +997,12 @@ transform: translate(-50%, -50%) scale(1);
 
 /* Add a background color and some padding around the form */
 .CS-survey-container {
-border-radius: 20px;
-background-image: url("rideeeee.jpeg");
-background-repeat: no-repeat;
-background-size: cover;
-padding-left: 200px;
-padding-right: 200px;
-padding-top: 80px;
-padding-bottom: 100px;
-margin-bottom: 230px;
-margin-left: 230px;
-margin-right: 230px;
-margin-top: 50px;
+  background-color: #222;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  color: white;
 
 
 
@@ -1228,6 +1222,7 @@ line-height: 1.5;
 }
 .get-in-touch-with-us{
 text-align: center;
+margin: 5% 0 5% 0;
 }
 .get-in-touch-with-us h3{
 color: #5d5d5d;
@@ -1369,7 +1364,7 @@ width: 50%;
 width: 15%;
 margin-top: 50px;
 margin-right: 500px;
-background: green;
+background: #e23e3e;
 color: white;
 border: 0;
 outline: none;
@@ -1404,4 +1399,185 @@ font-size: 30px;
 
 .contactspg{
   position:relative;
+}
+
+.pic-center{
+  background-image: url("rideeeee.jpeg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: 735px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: fill;
+}
+.pic-center img{
+  
+  position: cover;
+  margin: 0;
+}
+.pic-center p{
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  font-weight: 55px;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  font-family: sans-serif;
+  text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.5);
+  
+  
+
+}
+.pic-center a{
+margin-top: 20%;
+}
+.pic-center img{
+width: 25%;
+margin-bottom: 20%;
+}
+.go-contacts{
+background-color: red;
+text-align: center;
+color: white;
+padding: 30px 25px;
+border: none;
+border-radius: 55px;
+cursor: pointer;
+font-size: 20px;
+
+
+}
+.aboutus-pic-center h2{
+position: absolute;
+text-align: center;
+font-size: 60px;
+font-weight: 55px;
+width: 100%;
+margin: 0;
+padding: 10px;
+font-family: sans-serif;
+cursor:default;
+color: white;
+text-shadow: 0 0 20px white;
+
+
+ 
+}
+.aboutus-pic-center p{
+position: absolute;
+text-align: center;
+color: white;
+font-size: 25px;
+font-weight: 55px;
+width: 100%;
+margin-top: 10%;
+padding: 10px;
+font-family: sans-serif;
+text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.aboutus-pic-center{
+background-image: url("red bike.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: 735px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: fill;
+}
+.welcome-homepage{
+padding-top: 5%;
+}
+.welcome-content{
+float: left ;
+width: 55%;
+}
+.welcome-main-content h3{
+
+margin-right: 20%;
+margin-top: 5%;
+padding-bottom: 5%;
+margin-left: 20%;
+color: #5d5d5d;
+font-size: 25px;
+font-family: 'Poppins', sans-serif;
+}
+.welcome-main-content h2{
+text-align: center;
+color: red;
+font-size: 25px;
+font-family: 'Poppins', sans-serif;
+}.welcome-main-content h1{
+text-align: center;
+color: black;
+font-size: 55px;
+font-weight: 900;
+font-family: sans-serif;
+}
+.homepage-welcome-img{
+float: right;
+margin-right: 20%;
+}
+
+.another-welcome{
+padding-top: 30%;
+
+
+}
+
+.another-welcome-main-content h3{
+margin-right: 20%;
+margin-top: 5%;
+margin-bottom: 20%;
+margin-left: 20%;
+color: #5d5d5d;
+font-size: 25px;
+font-family: 'Poppins', sans-serif;
+}
+.another-welcome-main-content{
+float: right ;
+width: 55%;
+}
+.another-welcome-main-content h2{
+text-align: center;
+color: red;
+font-size: 25px;
+font-family: 'Poppins', sans-serif;
+}
+.another-welcome-main-content h1{
+text-align: center;
+color: black;
+font-size: 55px;
+font-weight: 900;
+font-family: sans-serif;
+}
+.another-welcome-img{
+float: left;
+margin-left: 15%;
+padding-bottom: 10%;
+
+}
+
+#error {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+#error ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+#error li {
+  margin-bottom: 5px;
 }

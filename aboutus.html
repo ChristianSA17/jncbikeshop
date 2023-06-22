@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
 
     <head>
-        <title> JnC Bike Shop | Bike, Bike parts, and Bike Accessories Shop</title>
+        <title> JnC Bike Shop | About Us</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -21,10 +22,10 @@
                      <li> <a href = "homepage.html" >HOME</a></li>
                      <li> <a href = "products.html" class="productbttn">PRODUCTS ⏷</a>
                          <ul class="dropdown">
-                             <li> <a href = "#mtb">MTB</a></li>
-                             <li> <a href = "#rb">RoadBike</a></li>
-                             <li> <a href = "#parts">Bike Parts</a></li>
-                             <li> <a href = "#accessories">Bike Accessories</a></li>
+                             <li> <a href = "products-mountainbikes.html">MTB</a></li>
+                             <li> <a href = "products-roadbikes.html">RoadBike</a></li>
+                             <li> <a href = "products-bikeparts.html">Bike Parts</a></li>
+                             <li> <a href = "products-bikeaccessories.html">Bike Accessories</a></li>
                          </ul>
                      </li>
                      <li> <a href = "aboutus.html" >ABOUT US</a></li>
@@ -54,13 +55,6 @@
                             <!-- Cart Close -->
                             <i class="fa-solid fa-x" id="close-cart"></i>
                         </div>
-                    </div>
-                </div>
-    
-                <!-- Search Button -->
-                <div class="search-cont">
-                    <div class="search-icon">
-                        <i class="search fa fa-search"></i>
                     </div>
                 </div>
     
@@ -157,9 +151,10 @@
                 </div>
             </div>
 
-            <div class="aboutus-image-container">
-                <img src="cover3.png">
-            </div>
+            <div class="aboutus-pic-center">
+                <h2>IN JUNE 2023, OUR PRODUCTS AND SALES REACH 1 MILLION</h2>
+                <p>AT THE SAME TIME, WE PROVIDE A ONE-STOP SERVICE INTERGRATING DESIGN, MEASUREMENT<br> PRODUCTION, DELIVERY.INSTALLATION, AND AFTER-SALES SERVICE.</p>
+             </div>
 
 
             
@@ -207,27 +202,40 @@
        
         <script src="javascript.js"></script>
 
-        <script>form.addEventListener('submit', (e) => {
-            let messages = [] 
-            if(fname.value === '' || fname.value == null ) {
-             messages.push('Name is required')
-             
-            }
-            if(email.value === '' || email.value == null ) {
-                messages.push('Email is required')
-                
-               }
-          
-            if (messages.length > 0) {
-                e.preventDefault()
-            }
-          if (messages.length > 0) {
-            e.preventDefault()
-            errorElement.innerText = messages.join(' ')
-          }
-          
-          
-          })</script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+   var submitBtn = document.querySelector(".submit-btn");
+   submitBtn.addEventListener("click", function(e) {
+     e.preventDefault(); // Prevents the default form submission
+     
+     let messages = [];
+     
+     var fname = document.querySelector("#fname");
+     var email = document.querySelector("#email");
+     var errorElement = document.querySelector("#error");
+     
+     errorElement.innerHTML = ""; // Clear previous error messages
+     
+     if (fname.value === '' || fname.value == null) {
+       messages.push('*Name is required*');
+     }
+     
+     if (email.value === '' || email.value == null) {
+       messages.push('*Email is required*');
+     }
+     
+     if (messages.length > 0) {
+       errorElement.innerHTML = messages.join('<br>');
+       return; // Stop further execution
+     }
+     
+     // Additional form processing code
+     location.replace("survey-response.html");
+   });
+ });
+ 
+ 
+             </script>
 
         <footer> 
             <div class="row">
@@ -248,19 +256,19 @@
                     <div class="col">
                         <h3>PRODUCTS</h3>
                         <ul>
-                            <li><a href="">Mountain Bikes</a></li>
-                            <li><a href="">Road Bikes</a></li>
-                            <li><a href="">Bike Parts</a></li>
-                            <li><a href="">Bike Accessories</a></li>
+                            <li><a href="products-mountainbikes.html">Mountain Bikes</a></li>
+                            <li><a href="products-roadbikes.html">Road Bikes</a></li>
+                            <li><a href="products-bikeparts.html">Bike Parts</a></li>
+                            <li><a href="products-bikeaccessories.html">Bike Accessories</a></li>
                         </ul>
                     </div>
-    
+
                 <div class="col">
                     <h3>About</h3>
                     <ul>
-                        <li><a href="" class="abtfoot">About Us</a></li>
+                        <li><a href="aboutus.html" class="abtfoot">About Us</a></li>
                     </ul>
-    
+
                 </div>
     
             </div>
