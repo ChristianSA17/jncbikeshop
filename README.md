@@ -1,4 +1,4 @@
-**Online Bike Shop**
+**JnC Bike Shop**
 <br>
 <br>
 A simple ecommerce website for bike and bike parts.
