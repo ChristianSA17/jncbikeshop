@@ -1,7 +1,7 @@
 **JnC Bike Shop**
 <br>
 <br>
-A simple ecommerce website for bike and bike parts.
+A simple ecommerce static website for bike and bike parts.
 <br>
 <br>
 **How to Run**
