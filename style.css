@@ -710,7 +710,7 @@ hr {
 
  .category-container {
   display: flex;
-  width: 25%;
+  width: 35%;
  }
 
  .sidebar {
@@ -775,9 +775,13 @@ hr {
   flex-wrap: wrap;
   
  }
+ 
+ .contact-button-edit {
+  margin-right:30pc;
+ }
 
  .fil-p {
-  padding: 15px 15px;
+  padding: 30px 30px;
   background-color: white;
   margin: 7px 0;
   cursor: pointer;
@@ -807,7 +811,7 @@ hr {
  }
 
  .collapsible {
-  padding: 15px 15px;
+  padding: 30px 30px;
   background-color: white;
   margin: 7px 0;
   cursor: pointer;
@@ -900,7 +904,7 @@ margin-top: -490px;
 
 .product-imgpg {
   object-fit:cover;
-  height:250px;
+  height:320px;
   width: 100%;
 }
 
