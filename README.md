@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # JnC_BikeShop
-We created this website project with my duo classmate for school project 
+We created this static website project with my duo classmate for school project 
 =======
 **JnC Bike Shop**
 <br>
